@@ -59,18 +59,27 @@ let shoesList = [
     imgUrl: require("../images/shoes4.png")
   },
   {
-    title : "",
-    imgUrl : "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ab0de09e-05ae-4953-b3b1-3e5fee9d3360/air-jordan-1-retro-low-og-shoes-lZQrDX.png"
+    title : "Air Retro",
+    imgUrl : "https://cdn.sanity.io/images/pu5wtzfc/production/4dcf6688f910bf1e3e51f2bea5b306abe9996dbf-2000x1250.png"
   },
-  {},
-  {},
-  {},
+  {
+    title : "Jordon",
+    imgUrl : "https://images.squarespace-cdn.com/content/v1/6168cc360be4c71ad7a4693d/1675998134424-BQFLP4V1F8O1PF5YS88P/J1_032.png.png?format=500w"
+  },
+  {
+    title : "Nike Air Max",
+    imgUrl : require("../images/shoes5.png")
+  },
+  {
+    title : "Air force Wmns",
+    imgUrl : "https://media.karousell.com/media/photos/products/2023/10/24/nike_wmns_air_force_1_07_white_1698111447_4851c130" 
+  },
 
 ]
 const HomePage = () => {
   return (
     <div className="bg-light">
-      <section style={{ height: "500px" }} className="w-100 d-flex">
+      <section style={{ height: "450px" }} className="w-100 d-flex">
         <div className="  p-5 mt-3 w-50 ">
           <p className="fs-6 mt-5 ms-5 ps-5 sport-info m-0">
             Beautiful Sneaker Nike
@@ -89,6 +98,7 @@ const HomePage = () => {
           <button className="mt-5 btn p-2 btn btn-outline-dark btn-shop  ps-4 pe-4">
             Shopping Now
           </button>
+          
         </div>
         <div className="d-flex">
           <img
@@ -98,10 +108,10 @@ const HomePage = () => {
           />
         </div>
       </section>
-
+    <hr />
       <section style={{ height: "600px" }} className="w-100 ">
         <h2 className="fw-bold container  p-5 ">
-         <hr />  What are you looking for?...
+          What are you looking for?...
         </h2>
 
         <div className="row  ms-5 me-5">
@@ -127,11 +137,13 @@ const HomePage = () => {
           })}
         </div>
       </section>
+      <hr />
       <section
         style={{ height: "350px" }}
         className="w-75  mt-5 container d-flex "
       >
         <img
+      
         style={{height: "240px"}}
           className="rounded-pill"
           src="https://img.freepik.com/p cx9xafqdws6 remium-psd/3d-female-character-sitting-stack-coins_23-2148938914.jpg"

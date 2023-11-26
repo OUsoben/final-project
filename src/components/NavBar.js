@@ -10,7 +10,7 @@ function NavBar() {
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav " />
         <Navbar.Collapse id="basic-navbar-nav   text-center ">
-          <Nav className="me-auto  p-2 nav-list ">
+          <Nav className="mx-5   p-2 nav-list ">
             <NavLink className={'nav-link text-white ms-3  '} to={"/"} >Home</NavLink>
             <NavLink className={'nav-link text-white ms-3'} to={"/services"} >Service</NavLink>
             <NavLink className={'nav-link text-white ms-3'} to={"products"} >Products</NavLink>
@@ -19,6 +19,11 @@ function NavBar() {
           </Nav>
         </Navbar.Collapse>
       </Container>
+
+       <div className='pe-4'>
+        <button className='btn text-white text-decoration-underline ms-4'>Login</button>
+        <button className='btn btn-danger '>Sign In</button>
+       </div>
     </Navbar>
   );
 }
