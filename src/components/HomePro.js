@@ -1,38 +1,37 @@
 import React from 'react'
 import "../styles/homeProStyle.css"
 
-const HomePro = () => {
+const HomePro = (props) => {
   return (
-    <div class="container page-wrapper ">
-  <div class="page-inner">
-    <div class="row">
-      <div class="el-wrapper">
-        <div class="box-up">
-          <img class="img" src="http://code.slicecrowd.com/labs/4/images/t-shirt.png" alt=""/>
-          <div class="img-info">
-            <div class="info-inner">
-              <span class="p-name">I feel like Pablo</span>
-              <span class="p-company">Yeezy</span>
+    <div class="container">
+    <div class="card">
+        <div class="imgBx">
+            <img src={props.productData.imgUrl} alt="nike-air-shoe"/>
+        </div>
+
+        <div class="contentBx">
+
+            <h2>{props.productData.title}</h2>
+
+            <div class="size">
+                <h3>Size :</h3>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
             </div>
-            <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span></div>
-          </div>
+
+            <div class="color">
+
+                <h3>Color :</h3>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="#">Buy Now</a>
         </div>
 
-        <div class="box-down">
-          <div class="h-bg">
-            <div class="h-bg-inner"></div>
-          </div>
-
-          <a class="cart" href="#">
-            <span class="price">$120</span>
-            <span class="add-to-cart">
-              <span class="txt">Add in cart</span>
-            </span>
-          </a>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
   )
 }

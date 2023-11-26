@@ -40,9 +40,36 @@ let waterSoprtList = [
   },
 ];
 
+
+let shoesList = [ 
+  {
+    title : "Nike Shoes",
+    imgUrl : "http://pngimg.com/uploads/running_shoes/running_shoes_PNG5782.png"
+  },
+  {
+    title : "Air force 1",
+    imgUrl: "https://www.courir.com/on/demandware.static/-/Sites-master-catalog-courir/default/dw2bc08c65/images/hi-res/001498199_101.png"
+  },
+  {
+    title : "Nike Shoes",
+    imgUrl: require("../images/shoes2.png")
+  },
+  {
+    title : "Air Jodan",
+    imgUrl: require("../images/shoes4.png")
+  },
+  {
+    title : "",
+    imgUrl : "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ab0de09e-05ae-4953-b3b1-3e5fee9d3360/air-jordan-1-retro-low-og-shoes-lZQrDX.png"
+  },
+  {},
+  {},
+  {},
+
+]
 const HomePage = () => {
   return (
-    <div>
+    <div className="bg-light">
       <section style={{ height: "500px" }} className="w-100 d-flex">
         <div className="  p-5 mt-3 w-50 ">
           <p className="fs-6 mt-5 ms-5 ps-5 sport-info m-0">
@@ -59,14 +86,14 @@ const HomePage = () => {
               ALL SPORTS SHOES
             </p>
           </div>
-          <button className="mt-5 btn p-2 btn-primary btn-shop  ps-4 pe-4">
+          <button className="mt-5 btn p-2 btn btn-outline-dark btn-shop  ps-4 pe-4">
             Shopping Now
           </button>
         </div>
         <div className="d-flex">
           <img
             className="img-fluid mt-2 ms-5 "
-            src="https://static.vecteezy.com/system/resources/previews/010/871/795/original/3d-man-doing-online-marketing-png.png"
+            src="https://www.courir.com/on/demandware.static/-/Sites-master-catalog-courir/default/dw2bc08c65/images/hi-res/001498199_101.png"
             alt="Shoes"
           />
         </div>
@@ -74,7 +101,7 @@ const HomePage = () => {
 
       <section style={{ height: "600px" }} className="w-100 ">
         <h2 className="fw-bold container  p-5 ">
-          What are you looking for?...
+         <hr />  What are you looking for?...
         </h2>
 
         <div className="row  ms-5 me-5">
@@ -87,32 +114,8 @@ const HomePage = () => {
           })}
         </div>
       </section>
-
-      <section
-        style={{ height: "350px" }}
-        className="w-75  mt-5 container d-flex "
-      >
-        <img
-          className="rounded"
-          src="https://img.freepik.com/p cx9xafqdws6 remium-psd/3d-female-character-sitting-stack-coins_23-2148938914.jpg"
-          alt=""
-        />
-        <div className="p-4 ms-5 fs-6">
-          <h5 className="fw-bold">
-            Don't wait for <br /> anything. Buy it today!
-          </h5>
-          <p className="pt-3">Let's enjoy with our store</p>
-          <p>
-            The sport store is the great choice to yours. <br />
-            that eazier to yourself to get everything you need...! <br />
-            less time to buy and have it all you want to buy.
-          </p>
-          <button className="btn btn-primary mt-4">Shop Now</button>
-        </div>
-      </section>
-   
-      <section style={{ height: "600px" }} className="w-100  mt-5">
-        <h2 className="fw-bold container  p-5 ">WaterSports</h2>
+      <section style={{ height: "600px" }} className="w-100 ">
+        <h2 className="fw-bold container  p-5 "> <hr /> WaterSports</h2>
 
         <div className="row  ms-5 me-5">
           {waterSoprtList.map((product, index) => {
@@ -126,6 +129,30 @@ const HomePage = () => {
       </section>
       <section
         style={{ height: "350px" }}
+        className="w-75  mt-5 container d-flex "
+      >
+        <img
+        style={{height: "240px"}}
+          className="rounded-pill"
+          src="https://img.freepik.com/p cx9xafqdws6 remium-psd/3d-female-character-sitting-stack-coins_23-2148938914.jpg"
+          alt=""
+        />
+        <div className="p-4 ms-5 fs-6">
+          <h5 className="fw-bold">
+            Don't wait for <br /> anything. Buy it today!
+          </h5>
+          <p className="pt-3">Let's enjoy with our store</p>
+          <p>
+            The sport store is the great choice to yours.
+            that eazier to yourself to get everything you need...! 
+            less time to buy and have it all you want to buy.
+            <br />Sign in for faster checkout and earn one Point for every $1 spent at our family of brands! 300 Points = $10 Reward.
+          </p>
+        
+        </div>
+      </section>
+      <section
+        style={{ height: "350px" }}
         className="w-75 container mt-5 d-flex "
       >
         <div className=" w-75 fs-6 pt-4 ">
@@ -133,17 +160,34 @@ const HomePage = () => {
           <p className="pt-3">
           Quality doesn’t have to be expensive! Being sports enthusiasts ourselves we know about the importance of high-quality sports equipment. That’s why we regularly offer low-priced sportswear by famous manufacturers. Comfortable shorts, breathable shoes, windproof tracksuit jackets – we have them all! And you don’t have to go without your favourite brand. We list adidas, Nike and PUMA but also Reebok, Lonsdale and Dunlop. Our range of products is huge, and we permanently add new products. 
           </p>
-          <button className="btn btn-primary mt-4">View more </button>
+ 
         </div>
         <img
-          className="rounded ms-5"
-          src="https://img.freepik.com/premium-psd/3d-male-cartoon-character_235528-895.jpg?w=2000"
+        style={{height: "240px"}}
+          className="rounded-pill ms-5"
+          src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?size=626&ext=jpg&ga=GA1.1.1401702421.1699262363&semt=ais"
           alt=""
         />
       </section>
-            <section className="mt-5">
-              <HomePro/>
-            </section>
+              <h1 className="mt-5"> <hr /></h1>
+           <section className="w-100  p-5">
+            <h2 className="fw-bold ps-5 ms-4"> Shoes</h2>
+            <div className="row">
+             {
+              shoesList.map((product , index) => {
+                return (
+                  <div className="col-3 mt-4">
+                    <HomePro  productData={product} />
+                  </div>
+                 
+                )
+              })
+    }
+              </div>
+              <div className="mt-5 text-center">
+              <button className="btn btn-outline-dark">View all</button>
+              </div>
+           </section>
     </div>
   );
 };
