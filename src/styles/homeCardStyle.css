@@ -1,0 +1,38 @@
+
+.title-font {
+    font-family: 'Raleway', sans-serif;
+  }
+  figure {
+    width: 400px;
+    height: 350px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  figure:after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: linear-gradient(-65deg, var(--bg) 50%, var(--accent) 50%);
+    filter: blur(25px);
+    transform:
+      translateX(calc(var(--hover) * 15%))
+      scale(calc(1 + (var(--hover) * 0.2)));
+    transition: transform 0.2s, background 0.2s;
+  }
+  
+  .item-img {
+    position: absolute;
+    width: 90%;
+    transform:
+      translateX(calc(var(--hover) * -10%))
+      scale(calc(1 + (var(--hover) * 0.2)));
+    transition: transform 0.2s;
+  }
+  
+  article:hover {
+    --hover: 0.3;
+  }
