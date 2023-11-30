@@ -188,7 +188,7 @@ const HomePage = () => {
              {
               shoesList.map((product , index) => {
                 return (
-                  <div className="col-3 mt-4">
+                  <div className="col-lg-3 col-sm-6 col-md-12 mt-4">
                     <HomePro  productData={product} />
                   </div>
                  

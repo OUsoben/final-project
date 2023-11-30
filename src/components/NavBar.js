@@ -21,8 +21,8 @@ function NavBar() {
       </Container>
 
        <div className='pe-4'>
-        <button className='btn text-white text-decoration-underline ms-4'>Login</button>
-        <button className='btn btn-danger '>Sign In</button>
+        <button className='btn text-white me-2'>Login</button>
+        <button className='btn btn-danger '>Sign In </button>
        </div>
     </Navbar>
   );
