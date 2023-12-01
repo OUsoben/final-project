@@ -6,11 +6,11 @@ import { NavLink } from 'react-router-dom';
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-dark  item-style">
+    <Navbar expand="lg" className="bg-dark  item-style sticky-top">
       <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav " />
-        <Navbar.Collapse id="basic-navbar-nav   text-center ">
-          <Nav className="mx-5   p-2 nav-list ">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav ">
+          <Nav className="mx-5  p-2 nav-list  text-center p ">
             <NavLink className={'nav-link text-white ms-3  '} to={"/"} >Home</NavLink>
             <NavLink className={'nav-link text-white ms-3'} to={"/services"} >Service</NavLink>
             <NavLink className={'nav-link text-white ms-3'} to={"products"} >Products</NavLink>
@@ -21,8 +21,8 @@ function NavBar() {
       </Container>
 
        <div className='pe-4'>
-        <button className='btn text-white me-2'>Login</button>
-        <button className='btn btn-danger '>Sign In </button>
+        <button className='btn btn-link text-white me-2'>Login</button>
+        <button className='btn btn-danger '>Sign Up </button>
        </div>
     </Navbar>
   );
