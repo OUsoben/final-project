@@ -1,0 +1,15 @@
+.bgc-footer{
+        background-color: black;
+}
+.h-font{
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    color: aliceblue;
+}
+.list-font {
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    color: #706e6e;
+    
+}

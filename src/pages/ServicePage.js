@@ -76,7 +76,7 @@ const ServicePage = () => {
               <span className="me-2">
                 <FontAwesomeIcon icon={faSquareCheck} />
               </span>
-              Quality of products
+              Quality of products 
             </p>
             <p className=" fs-5">
               <span className="me-2">
@@ -98,9 +98,9 @@ const ServicePage = () => {
             </p>
             <p className=" fs-5">
               <span className="me-2">
-                <FontAwesomeIcon icon={faSquareCheck} />
+              <FontAwesomeIcon icon={faSquareCheck} />
               </span>
-              Happier
+                  Make you remember
             </p>
           </div>
         </div>
