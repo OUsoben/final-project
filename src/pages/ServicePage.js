@@ -76,7 +76,7 @@ const ServicePage = () => {
               <span className="me-2">
                 <FontAwesomeIcon icon={faSquareCheck} />
               </span>
-              Quality of products 
+              Quality of products
             </p>
             <p className=" fs-5">
               <span className="me-2">
@@ -98,17 +98,35 @@ const ServicePage = () => {
             </p>
             <p className=" fs-5">
               <span className="me-2">
-              <FontAwesomeIcon icon={faSquareCheck} />
+                <FontAwesomeIcon icon={faSquareCheck} />
               </span>
-                  Make you remember
+              Make you remember
             </p>
           </div>
         </div>
       </section>
-        <section className="">
-              <h2 className="text-center fw-bold">Our services </h2>
+      <section className="text-center">
+        <h2 className="fw-bold "> services </h2>
+        <p className="text-muted">All The service Provided by us </p>
 
-        </section>
+        <div
+          style={{ height: "130px" }}
+          className="d-flex mt-3 w-75 container justify-content-center gap-5 "
+        >
+          <div className="w-25 rounded border "></div>
+          <div className="w-25   rounded border "></div>
+          <div className="w-25  rounded border"></div>
+        </div>
+        
+        <div
+          style={{ height: "130px" }}
+          className="d-flex mt-3 w-75 container justify-content-center gap-5 mt-5"
+        >
+          <div className="w-25 rounded border "></div>
+          <div className="w-25   rounded border "></div>
+          <div className="w-25  rounded border"></div>
+        </div>
+      </section>
     </div>
   );
 };
