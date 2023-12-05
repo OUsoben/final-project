@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Footer = () => {
   return (
     <div>
-      <footer className="w-lg-100 p-5 d-flex bgc-footer gap-5 ">
+      <footer className="w-lg-100 p-5 d-flex bgc-footer gap-5 col-lg-12 col-sm-6 col-md-8 ">
         <div className="p-5">
           <h5 className=" fw-blod ps-3 h-font">MEN</h5>
           <ul className="d-grid gap-3 pt-5 list-font ">
@@ -60,29 +60,22 @@ const Footer = () => {
           <div class="input-group mt-5 ms-3">
             <input
               type="text"
-              class="form-control p-3 pe-5 "
+              class="form-control p-3 pe-5 ps-5  "
               placeholder="Enter Email Address"
               aria-label="Enter Email Address"
               aria-describedby="basic-addon2"
             />
-            <span style={{background: "#B31312"}} class="input-group-text text-white pe-4 ps-4" id="basic-addon2">
+            <span
+              style={{ background: "#B31312" }}
+              class="input-group-text text-white pe-4 ps-4"
+              id="basic-addon2"
+            >
               Subscribe
             </span>
           </div>
         </div>
+ 
       </footer>
-      <div className=" text-center bg-black">
-        <p>
-          © 2023 All Rights Reserved. Design by{" "}
-          <span
-            style={{ fontWeight: "bolder" }}
-            className="text-danger text-weight-bold"
-          >
-            Ben
-          </span>
-        </p>
-      </div>
-
     </div>
   );
 };

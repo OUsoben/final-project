@@ -105,6 +105,10 @@ const ServicePage = () => {
           </div>
         </div>
       </section>
+        <section className="">
+              <h2 className="text-center fw-bold">Our services </h2>
+
+        </section>
     </div>
   );
 };
