@@ -21,7 +21,7 @@ function NavBar() {
       </Container>
 
        <div className='pe-4'>
-        <button className='btn btn-link text-white me-2'>Login</button>
+        <button className='btn  text-white me-2'>Login</button>
         <button className='btn btn-danger '>Sign Up </button>
        </div>
     </Navbar>

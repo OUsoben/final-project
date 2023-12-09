@@ -5,3 +5,16 @@
     font-size: 50px;
     font-family: 'Poppins', sans-serif;
 }
+.item-fonts{
+    font-family: 'Hedvig Letters Serif', serif;
+}
+
+.com-font {
+    font-family: 'Kalnia', serif;
+    font-weight:900;
+}
+.card-comment {
+    height: 230px;
+    border: 3px solid black;
+    box-shadow: 5px 10px 10px black;
+}

@@ -1,134 +1,128 @@
-import React from "react";
-import "../styles/serviceStyle.css";
-import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  import React from "react";
+  import "../styles/serviceStyle.css";
+  import { faAirFreshener, faBoxOpen, faComment, faDolly, faDoorOpen, faPlane, faShip, faSquareCheck, faTruck } from "@fortawesome/free-solid-svg-icons";
+  import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  import { icon } from "@fortawesome/fontawesome-svg-core";
 
-const ServicePage = () => {
-  return (
-    <div>
-      <section
-        style={{ height: "500px" }}
-        className=" pt-5 d-flex w-100 order-2 container "
-      >
-        <div>
-          <h1 className=" fw-bold font-title">
-            We'll provide the best service and Quality of the products
-          </h1>
-          <p className=" fs-5">
-            We are care all of you to get more sport products . you come to the
-            right place our shop has more everything what you want to buy come
-            and get it today
-          </p>
-          <button className="btn btn-lg btn-outline-primary mt-5">
-            Get Stated
-          </button>
-        </div>
-        <img
-          className="img-fluid"
-          src="https://static.vecteezy.com/system/resources/previews/011/382/018/original/business-people-gather-in-the-meeting-room-3d-character-illustration-png.png"
-          alt="Photo"
-        />
-      </section>
-      <section
-        style={{ height: "120px" }}
-        className="w-75 mt-5  container gap-2 d-flex "
-      >
-        <img
-          className="ms-5"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw2k6ui40rgVJkaRfVrlqyng0iep_6m8_yvW9uKgGJXrIvB6qHOUVyWC1vpB5hMmkeMIc&usqp=CAU"
-          alt=""
-        />
-        <img
-          src="https://thumbs.dreamstime.com/b/adidas-sport-clothing-brand-logo-editorial-image-vinnitsia-ukraine-june-222082589.jpg"
-          alt=""
-        />
-        <img
-          className="ms-4"
-          src="https://logowik.com/content/uploads/images/697_nike.jpg"
-          alt=""
-        />
-        <img
-          className="img-fluid"
-          src="https://buystickershere.com/cdn/shop/products/606-vans_black_oval_1000x.jpg?v=1650738873"
-          alt=""
-        />
-        <img
-          className="ms-5"
-          src="https://brandlogos.net/wp-content/uploads/2015/05/the_north_face-logo_brandlogos.net_qxwtp-512x512.png"
-          alt=""
-        />
-        <img
-          className="ms-3"
-          src="https://www.logo.wine/a/logo/Fila_(company)/Fila_(company)-Logo.wine.svg"
-          alt=""
-        />
-      </section>
-      <section className="container mt-5 d-flex p-5">
-        <img
-          className="img-fluid rounded mt-5 s-5"
-          src="https://media.istockphoto.com/id/177864244/photo/sports-equipment.jpg?s=612x612&w=0&k=20&c=giZSHE3tqXuE0I5DgoaD-YvdDy3EQnctCDMElezDRvY="
-          alt=""
-        />
-        <div className="p-5">
-          <h1 className="fw-bold"> We focused on...</h1>
-          <div className="ps-3">
+  const ServicePage = () => {
+    return (
+      <div className="bg-light">
+        <section
+          style={{ height: "500px" }}
+          className=" pt-5 d-flex w-100 order-2 container "
+        >
+          <div>
+            <h1 className=" fw-bold font-title">
+              We'll provide the best service and Quality of the products
+            </h1>
             <p className=" fs-5">
-              <span className="me-2">
-                <FontAwesomeIcon icon={faSquareCheck} />
-              </span>
-              Quality of products
+              We are care all of you to get more sport products . you come to the
+              right place our shop has more everything what you want to buy come
+              and get it today
             </p>
-            <p className=" fs-5">
-              <span className="me-2">
-                <FontAwesomeIcon icon={faSquareCheck} />
-              </span>
-              Good price
-            </p>
-            <p className=" fs-5">
-              <span className="me-2">
-                <FontAwesomeIcon icon={faSquareCheck} />
-              </span>
-              Less time
-            </p>
-            <p className=" fs-5">
-              <span className="me-2">
-                <FontAwesomeIcon icon={faSquareCheck} />
-              </span>
-              Get more and more
-            </p>
-            <p className=" fs-5">
-              <span className="me-2">
-                <FontAwesomeIcon icon={faSquareCheck} />
-              </span>
-              Make you remember
-            </p>
+            <button className="btn btn-lg btn-outline-dark mt-5">
+              Get Stated
+            </button>
           </div>
-        </div>
-      </section>
-      <section className="text-center">
-        <h2 className="fw-bold "> services </h2>
-        <p className="text-muted">All The service Provided by us </p>
+          
+          <img
+            className="img-fluid rounded"
+            src="https://static.vecteezy.com/system/resources/previews/011/382/018/original/business-people-gather-in-the-meeting-room-3d-character-illustration-png.png"
+            alt="Photo"
+          />
+        </section>
+        <section className="text-center">
+          <h2 className="fw-bold item-fonts"> services </h2>
+          <p className="text-muted">All The service Provided by us </p>
 
-        <div
-          style={{ height: "130px" }}
-          className="d-flex mt-3 w-75 container justify-content-center gap-5 "
-        >
-          <div className="w-25 rounded border "></div>
-          <div className="w-25   rounded border "></div>
-          <div className="w-25  rounded border"></div>
-        </div>
-        
-        <div
-          style={{ height: "130px" }}
-          className="d-flex mt-3 w-75 container justify-content-center gap-5 mt-5"
-        >
-          <div className="w-25 rounded border "></div>
-          <div className="w-25   rounded border "></div>
-          <div className="w-25  rounded border"></div>
-        </div>
-      </section>
-    </div>
-  );
-};
+          <div
+            style={{ height: "120px" }}
+            className="d-flex mt-3 w-75 container justify-content-center gap-5 "
+          >
+            <div className="w-25 rounded border border-danger d-flex">
+              
+            <FontAwesomeIcon className="mt-4 ms-3 icon-remove" icon={faTruck}  size="4x"/>
+            <div className="pt-4 ps-2">
+                <p className=" item-fonts pe-5 fw-bold text-danger">LOGISTIC</p>
+                <p className="text-muted ps-3">it is a long estimated.</p>
+            </div>
+              
+            </div>
+            <div className="w-25 rounded border border-danger d-flex">
+              
+              <FontAwesomeIcon className="mt-4 ms-3 icon-remove " icon={faDolly}  size="4x"/>
+              <div className="pt-4 ps-2">
+                  <p className= "item-fonts pe-5 fw-bold text-danger">TRANSPORT</p>
+                  <p className="text-muted ps-3">it is a long estimated.</p>
+              </div>
+                
+              </div>
+              <div className="w-25 rounded border border-danger d-flex">
+              
+              <FontAwesomeIcon className="mt-4 ms-3 icon-remove " icon={faShip}  size="4x"/>
+              <div className="pt-4 ps-2">
+                  <p className=" item-fonts pe-4 fw-bold text-danger">WAREHOUSING</p>
+                  <p className="text-muted ps-2">it is a long estimated.</p>
+              </div>
+                
+              </div>
+    
+          </div>
+          
+          <div
+            style={{ height: "120px" }}
+            className="d-flex mt-3 w-75 container justify-content-center gap-5 mt-5"
+          >
+            <div className="w-25 rounded border border-danger d-flex">
+              
+              <FontAwesomeIcon className="mt-4 ms-3 icon-remove " icon={faBoxOpen}  size="4x"/>
+              <div className="pt-4 ps-2">
+                  <p className="text-danger item-fonts pe-5 fw-bold">PACKAGING</p>
+                  <p className="text-muted ps-3 ">it is a long estimated.</p>
+              </div>
+                
+              </div>
+              <div className="w-25 rounded border border-danger d-flex">
+              
+              <FontAwesomeIcon className="mt-4 ms-3 icon-remove " icon={faDoorOpen}  size="4x"/>
+              <div className="pt-4 ps-2">
+                  <p className="text-danger item-fonts pe-2 fw-bold">DOOR TO DOOR</p>
+                  <p className="text-muted ps-3">it is a long estimated.</p>
+              </div>
+                
+              </div>
+              <div className="w-25 rounded border border-danger d-flex">
+              
+              <FontAwesomeIcon className="mt-4 ms-3 icon-remove" icon={faPlane}  size="4x"/>
+              <div className="pt-4 ps-2 ">
+                  <p className="text-danger item-fonts pe-5 fw-bold me-4">CARGO</p>
+                  <p className="text-muted ps-3">it is a long estimated.</p>
+              </div>
+                
+              </div>
+          </div>
+        </section>
 
-export default ServicePage;
+        <section className="container mt-5 d-flex p-5">
+          <img  style={{height: "400px"}}
+            className="img-fluid "
+            src="https://cdn3d.iconscout.com/3d/premium/thumb/businessman-in-doubt-4872067-4081464.png"
+            alt="Question"
+          />  
+          <div className="p-5  container ">
+              <h2 className="fw-bold">If you have any questions or Comments</h2>
+              <p> Drop Your comments down below.....</p>
+                <div  className=" rounded card-comment">
+         
+                  <h3 className="fw-blod com-font pt-4 ps-3 "> <span className="pe-3 fs-4">   <FontAwesomeIcon icon={faComment}  /></span> Comments</h3>
+                    <input className="form-control w-75 ms-5 ps-3 border-3 border-dark mt-3 p-3" type="text" placeholder="Comments...."/>
+                    <button className="btn btn-lg btn-warning ps-3 pe-3  mt-4 ms-5 fw-bold ">Sand</button>
+                    <button className=" btn btn-lg  mt-4 ms-3">reset</button>
+                </div>
+              </div>
+        </section>
+      </div>
+    );
+  };
+
+  export default ServicePage;
