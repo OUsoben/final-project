@@ -27,7 +27,7 @@
           
           <img
             className="img-fluid rounded"
-            src="https://static.vecteezy.com/system/resources/previews/011/382/018/original/business-people-gather-in-the-meeting-room-3d-character-illustration-png.png"
+            src="https://st2.depositphotos.com/3591429/7169/i/450/depositphotos_71694649-stock-photo-diverse-people-and-the-customer.jpg"
             alt="Photo"
           />
         </section>

@@ -2,7 +2,9 @@ import React from 'react'
 
 const DashBoardPage = () => {
   return (
-    <div>dashBoardPage</div>
+   <div>
+ 
+   </div>
   )
 }
 
