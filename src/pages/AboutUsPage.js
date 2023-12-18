@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/aboutUsStyle.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faLine, faLinkedinIn, faTiktok, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const AboutUsPage = () => {
   return (
@@ -90,9 +90,12 @@ const AboutUsPage = () => {
           </p>
           <h5 className="fw-bold">FOLLOW ME</h5>
           <hr />
-          <div className="ps-3 d-flex">
+          <div className=" d-flex">
           <FontAwesomeIcon className="text-primary" icon={faTwitter} size="2x" />
-          </div>
+          <FontAwesomeIcon className="text-primary ps-3" icon={faInstagram} size="2x" />
+          <FontAwesomeIcon className="text-primary ps-3" icon={faFacebook} size="2x" />
+          <FontAwesomeIcon className="text-primary ps-3" icon={faTiktok} size="2x" />
+           </div>
           
         </div>
       </section>
@@ -107,6 +110,14 @@ const AboutUsPage = () => {
             someone interested in the tech world, I'm excited to share a bit
             about what I do and the passion that drives me.
           </p>
+          <h5 className="fw-bold">FOLLOW ME</h5>
+          <hr />
+          <div className=" d-flex">
+          <FontAwesomeIcon className="text-primary" icon={faTwitter} size="2x" />
+          <FontAwesomeIcon className="text-primary ps-3" icon={faInstagram} size="2x" />
+          <FontAwesomeIcon className="text-primary ps-3" icon={faFacebook} size="2x" />
+          <FontAwesomeIcon className="text-primary ps-3" icon={faTiktok} size="2x" />
+           </div>
         </div>
         <img
           className="  img-fluid col-lg-3  rounded"

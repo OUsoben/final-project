@@ -3,6 +3,7 @@ import "../styles/homePageStyle.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import HomeCard from "../components/HomeCard";
 import HomePro from "../components/HomePro";
+import { useNavigate } from "react-router-dom";
 
 
 let listProduct = [
@@ -77,6 +78,7 @@ let shoesList = [
 
 ]
 const HomePage = () => {
+  let navigate = useNavigate()
   return (
     <div className="bg-light">
       <section style={{ height: "450px" }} className="w-100 d-flex">
@@ -95,7 +97,13 @@ const HomePage = () => {
               ALL SPORTS SHOES
             </p>
           </div>
-          <button className="mt-5 btn p-2 btn btn-outline-dark btn-shop  ps-4 pe-4">
+          <button className="mt-5 btn p-2 btn btn-outline-dark btn-shop  ps-4 pe-4"
+          
+          onClick={()=>{
+            navigate("/products")
+          }}
+          
+          >
             Shopping Now
           </button>
           
@@ -197,7 +205,11 @@ const HomePage = () => {
     }
               </div>
               <div className="mt-5 text-center">
-              <button className="btn btn-outline-dark">View all</button>
+              <button className="btn btn-outline-dark"
+                onClick={() =>{
+                    navigate("/products ", "_blank");
+                }}
+              >View all</button>
               </div>
            </section>
     </div>

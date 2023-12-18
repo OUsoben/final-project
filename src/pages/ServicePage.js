@@ -5,6 +5,7 @@
   import { icon } from "@fortawesome/fontawesome-svg-core";
 
   const ServicePage = () => {
+    
     return (
       <div className="bg-light">
         <section
@@ -27,7 +28,7 @@
           
           <img
             className="img-fluid rounded"
-            src="https://st2.depositphotos.com/3591429/7169/i/450/depositphotos_71694649-stock-photo-diverse-people-and-the-customer.jpg"
+            src={require("../images/logo.png")}
             alt="Photo"
           />
         </section>

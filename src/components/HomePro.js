@@ -3,7 +3,7 @@ import "../styles/homeProStyle.css"
 
 const HomePro = (props) => {
   return (
-    <div class="container">
+    <div class="item-container">
     <div class="card">
         <div class="imgBx">
             <img src={props.productData.imgUrl} alt="nike-air-shoe"/>

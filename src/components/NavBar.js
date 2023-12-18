@@ -10,6 +10,7 @@ function NavBar() {
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav ">
+        
           <Nav className="mx-5  p-2 nav-list  text-center p ">
             <NavLink className={'nav-link text-white ms-3  '} to={"/"} >Home</NavLink>
             <NavLink className={'nav-link text-white ms-3'} to={"/services"} >Service</NavLink>

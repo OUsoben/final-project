@@ -19,13 +19,7 @@ const Header = () => {
           </h2>
           <p className="text-secondary ms-2 ps-5 p-font">Your great choice </p>
         </div>
-        <img
-          style={{ height: "90px" }}
-          className=" img-fluid mt-5 me-5 "
-          src={require("../images/logo.png")}
-          alt="Logo"
-        />
-
+      
         <div class="w-50 pt-2   container height d-flex justify-content-center mt-5">
           <div class="col-lg-10 col-md-6 col-sm-4">
             <div class="form">

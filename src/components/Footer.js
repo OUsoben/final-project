@@ -50,11 +50,12 @@ const Footer = () => {
         <div className="pt-5 ms-5">
           <h5 className=" fw-blod ps-3 h-font">FOLLOW US</h5>
           <div className="d-flex gap-4 mt-4 m-3">
-            <FontAwesomeIcon icon={faTwitter} color="#B31312" size="2x" />
-            <FontAwesomeIcon icon={faFacebook} color="#B31312" size="2x" />
-            <FontAwesomeIcon icon={faInstagram} color="#B31312" size="2x" />
-            <FontAwesomeIcon icon={faYoutube} color="#B31312" size="2x" />
-            <FontAwesomeIcon icon={faLinkedin} color="#B31312" size="2x" />
+            <FontAwesomeIcon icon={faTwitter} color="white" size="2x" />
+            <FontAwesomeIcon icon={faFacebook} color="white" size="2x" />
+            <FontAwesomeIcon icon={faInstagram} color="white" size="2x" />
+            <FontAwesomeIcon icon={faYoutube} color="white" size="2x" />
+            <FontAwesomeIcon icon={faLinkedin} color="white" size="2x" />
+      
           </div>
           <h5 className=" fw-blod ps-3 pt-5 mt-2 h-font ">SUBSCRIBE US</h5>
           <div class="input-group mt-5 ms-3">

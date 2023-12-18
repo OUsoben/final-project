@@ -10,6 +10,7 @@ import DashBoardPage from "./pages/DashBoardPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import Footer from "./components/Footer";
+import ProductDetail from "./pages/ProductDetail";
 function App() {
   return (
     <div>
@@ -22,9 +23,11 @@ function App() {
             <Route path="/products" element ={<ProductPage/>}/>
             <Route path="/aboutus" element = {<AboutUsPage/>} />
             <Route path="/dashboard" element =  {<DashBoardPage/>}/>
+            <Route path="/products/:id" element = {<ProductDetail/>}/>
             <Route path="*" element = {<NotFoundPage/>}/>
           
         </Routes>
+        
       <Footer/>
      </BrowserRouter>
 
