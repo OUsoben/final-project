@@ -4,8 +4,11 @@ import { handleLongText } from "../utils/helper";
 import React from 'react'
 import { faStar } from "@fortawesome/free-regular-svg-icons";
 import { faBold } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({productData}) => {
+
+  let naviagte = useNavigate();
   return (
     <div>
       <div class="container mt-3">
@@ -13,7 +16,7 @@ const ProductCard = ({productData}) => {
         <div class="col-md-10">
             <div class="row p-2 bg-white border rounded">
                 <div class="col-md-3 mt-1">
-                  <img class="img-fluid img-responsive rounded product-image"
+                  <img class="img-fluid img-responsive rounded product-image" 
                    src={productData.images[0]}
                   onError={({currentTarget})=>{
                     currentTarget.onerror = null  // prevent infinite loop
@@ -49,7 +52,7 @@ const ProductCard = ({productData}) => {
                     <h6 class="text-success">Free shipping</h6>
                     <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm" type="button"
                      onClick={()=> {
-                    
+                        naviagte(`/products/${productData.id}`)
                      }}
                     >Details</button><button class="btn btn-outline-primary btn-sm mt-2" type="button">Add to wishlist</button></div>
                 </div>

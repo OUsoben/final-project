@@ -16,18 +16,16 @@
             <h1 className=" fw-bold font-title">
               We'll provide the best service and Quality of the products
             </h1>
-            <p className=" fs-5">
+            <p className=" fs-5 ">
               We are care all of you to get more sport products . you come to the
               right place our shop has more everything what you want to buy come
-              and get it today
+              and get it today.At the sport store, we believe that exceptional customer service is not just a commitment; it's a promise we uphold with every interaction.  Whether you have questions about our products, need recommendations, or want to learn more, our team is here to provide you with the information you seek.
             </p>
-            <button className="btn btn-lg btn-outline-dark mt-5">
-              Get Stated
-            </button>
+          
           </div>
           
           <img
-            className="img-fluid rounded"
+            className="img-fluid rounded ms-5"
             src={require("../images/logo.png")}
             alt="Photo"
           />

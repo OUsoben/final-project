@@ -8,7 +8,7 @@ import PlaceHolderCard from '../components/PlaceHolderCard'
 const ProductPage = () => {
   const  [products,setProducts] = useState([])
   const  [isLoading,setIsLoading] = useState(true)
-      useEffect(()=>{
+       useEffect(()=>{
         GET_ALL_PRODUCT().then(
           response=>{ 
               setProducts(response)
