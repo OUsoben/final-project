@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import HomeCard from "../components/HomeCard";
 import HomePro from "../components/HomePro";
 import { useNavigate } from "react-router-dom";
+import ProductModal from "../components/ProductModal";
 
 
 let listProduct = [
@@ -212,6 +213,7 @@ const HomePage = () => {
               >View all</button>
               </div>
            </section>
+           <ProductModal/>
     </div>
   );
 };

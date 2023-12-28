@@ -9,3 +9,7 @@ export const GET_PRODUCT_BY_ID = async (id)=>{
     const response = await api.get(`products/${id}`);
     return response.data;
 }
+export const DELETE_PRODUCT_BY_ID = async (id)=>{
+    const response = await api.delete(`products/${id}`);
+    return response.data;
+}

@@ -16,7 +16,7 @@ function NavBar() {
             <NavLink className={'nav-link text-white ms-3'} to={"/services"} >Service</NavLink>
             <NavLink className={'nav-link text-white ms-3'} to={"products"} >Products</NavLink>
             <NavLink className={'nav-link text-white ms-3'} to={"/aboutus"} >About Us</NavLink>
-            <NavLink className={'nav-link text-white ms-3'} to={"/dashboard"}  >Dashboard</NavLink>
+            <NavLink className={'nav-link text-white ms-3'} to={"/admin/products"}  >Dashboard</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

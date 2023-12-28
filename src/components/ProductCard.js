@@ -20,7 +20,7 @@ const ProductCard = ({productData}) => {
                    src={productData.images[0]}
                   onError={({currentTarget})=>{
                     currentTarget.onerror = null  // prevent infinite loop
-                    currentTarget.src = "https://theperfectroundgolf.com/wp-content/uploads/2022/04/placeholder.png"
+                    currentTarget.src = "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
                   }}
                   
                   alt=""/></div>
@@ -42,7 +42,7 @@ const ProductCard = ({productData}) => {
                     <div class="mt-1 mb-1 spec-1"><span>100% cotton</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br/></span></div>
                     <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br/></span></div>
                     <p class="text-justify ">{
-                           handleLongText(productData.description,150) 
+                           handleLongText(productData.description,60) 
                     }<br/><br/></p>
                 </div>
                 <div class="align-items-center align-content-center col-md-3 border-left mt-1">

@@ -1,6 +1,6 @@
   import React from "react";
   import "../styles/serviceStyle.css";
-  import { faAirFreshener, faBoxOpen, faComment, faDolly, faDoorOpen, faPlane, faShip, faSquareCheck, faTruck } from "@fortawesome/free-solid-svg-icons";
+  import { faBoxOpen, faComment, faDolly, faDoorOpen, faPlane, faShip,  faTruck } from "@fortawesome/free-solid-svg-icons";
   import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
   import { icon } from "@fortawesome/fontawesome-svg-core";
 
@@ -38,7 +38,7 @@
             style={{ height: "120px" }}
             className="d-flex mt-3 w-75 container justify-content-center gap-5 "
           >
-            <div className="w-25 rounded border border-danger d-flex">
+            <div className="w-25 rounded border border-dark d-flex">
               
             <FontAwesomeIcon className="mt-4 ms-3 icon-remove" icon={faTruck}  size="4x"/>
             <div className="pt-4 ps-2">
@@ -47,7 +47,7 @@
             </div>
               
             </div>
-            <div className="w-25 rounded border border-danger d-flex">
+            <div className="w-25 rounded border border-dark d-flex">
               
               <FontAwesomeIcon className="mt-4 ms-3 icon-remove " icon={faDolly}  size="4x"/>
               <div className="pt-4 ps-2">
@@ -56,7 +56,7 @@
               </div>
                 
               </div>
-              <div className="w-25 rounded border border-danger d-flex">
+              <div className="w-25 rounded border border-dark d-flex">
               
               <FontAwesomeIcon className="mt-4 ms-3 icon-remove " icon={faShip}  size="4x"/>
               <div className="pt-4 ps-2">
@@ -72,7 +72,7 @@
             style={{ height: "120px" }}
             className="d-flex mt-3 w-75 container justify-content-center gap-5 mt-5"
           >
-            <div className="w-25 rounded border border-danger d-flex">
+            <div className="w-25 rounded border border-dark d-flex">
               
               <FontAwesomeIcon className="mt-4 ms-3 icon-remove " icon={faBoxOpen}  size="4x"/>
               <div className="pt-4 ps-2">
@@ -81,7 +81,7 @@
               </div>
                 
               </div>
-              <div className="w-25 rounded border border-danger d-flex">
+              <div className="w-25 rounded border border-dark d-flex">
               
               <FontAwesomeIcon className="mt-4 ms-3 icon-remove " icon={faDoorOpen}  size="4x"/>
               <div className="pt-4 ps-2">
@@ -90,7 +90,7 @@
               </div>
                 
               </div>
-              <div className="w-25 rounded border border-danger d-flex">
+              <div className="w-25 rounded border border-dark d-flex">
               
               <FontAwesomeIcon className="mt-4 ms-3 icon-remove" icon={faPlane}  size="4x"/>
               <div className="pt-4 ps-2 ">
@@ -109,8 +109,8 @@
             alt="Question"
           />  
           <div className="p-5  container ">
-              <h2 className="fw-bold">If you have any questions or Comments</h2>
-              <p> Drop Your comments down below.....</p>
+              <h2 className="fw-bold">If you have any Questions or Recommendations</h2>
+              <p>Please drop your comments down below.....</p>
                 <div  className=" rounded card-comment">
          
                   <h3 className="fw-blod com-font pt-4 ps-3 "> <span className="pe-3 fs-4">   <FontAwesomeIcon icon={faComment}  /></span> Comments</h3>
