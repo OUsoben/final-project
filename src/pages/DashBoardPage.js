@@ -3,14 +3,18 @@ import DataTable from "react-data-table-component";
 import { GET_ALL_PRODUCT } from "../services/productService";
 import ProductModal from "../components/ProductModal";
 import PreviewCard from "../components/PreviewCard";
-
+import "../styles/previewCardStyle.css"
 const DashBoardPage = () => {
   const [showProductModal, setShowProductModal] = useState(false);
   const [products, setProduct] = useState([]);
+  const [updatedProduct, setUpdatedProduct] = useState(null)
   let refreshSatatus = false;
   const [filteredText, setFilteredText] = useState("");
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [itemID, setItemID] = useState();
+
+
+ 
 
   const columns = [
     {
@@ -59,7 +63,7 @@ const DashBoardPage = () => {
         setProduct(sortedProduct);
       })
       .catch((error) => console.log("errror is  : ", error));
-  }, []);
+  }, [showProductModal]);
   let filteredProduct = products.filter((product) =>
     product.title.toLowerCase().includes(filteredText.toLowerCase())
   );
@@ -76,10 +80,19 @@ const DashBoardPage = () => {
     setProduct(filteredProduct);
     setSelectedProduct(null);
   };
+
+  const handleUpdateProduct = (UpdateProduct) => {
+      setUpdatedProduct(UpdateProduct)
+      setShowProductModal(true)
+  }
   return (
-    <div>
-      <div className="d-flex mt-5 container ">
+    <div className="p-5 ">
+       <h1 style={{ fontFamily: "system-ui"}}  >Product Dashboard</h1>
+        <hr />
+      <div  className="d-flex mt-5 container  ">
+       
         <ProductModal
+           updatedProduct= {updatedProduct}
           showProduct={showProductModal}
           handleCloseProductForm={handleCloseModal}
         />
@@ -90,12 +103,13 @@ const DashBoardPage = () => {
                  <PreviewCard
             product={selectedProduct}
             onDelete={handleProductDelete}
+            onUpdate={handleUpdateProduct}
           />
               </>
               : 
               <>
-              <div className="d-grid p-5 mt-5 border rounded ">   
-               <img style={{width: "200px"}} src="https://cdn3d.iconscout.com/3d/premium/thumb/forward-8851143-7155861.png" alt="Image" />
+              <div className="d-grid p-5 mt-5 border rounded pre-border">   
+               <img style={{width: "220px"}} src="https://cdn3d.iconscout.com/3d/premium/thumb/web-alert-6592068-5487955.png" alt="Image" />
                 <p className="text-center pt-3">Choose product to perform modification!!!</p>
               </div>
 
@@ -117,10 +131,11 @@ const DashBoardPage = () => {
             paginationPerPage={5}
             data={products}
             subHeaderComponent={
-              <div className="d-flex w-100 justify-content-between">
+              <div className="d-flex w-100 justify-content-end">
                 <button
-                  className="btn btn-primary me-5"
+                  className="btn btn-primary me-2 "
                   onClick={() => {
+                    setUpdatedProduct(null)
                     setShowProductModal(true);
                   }}
                 >
@@ -130,13 +145,21 @@ const DashBoardPage = () => {
                 <input
                   className="form-control w-25"
                   onChange={(e) => {
+                    
                     setFilteredText(e.target.value);
-                  }}
+                
+                }
+       
+                  }
                   type="text"
                   name=""
                   id=""
+               
                   placeholder="Search Products..."
                 />
+                <button className="btn btn-outline-dark ms-2"
+              
+                >Clear</button>
               </div>
             }
             data={filteredProduct}

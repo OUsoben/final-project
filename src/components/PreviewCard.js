@@ -3,10 +3,14 @@ import { DELETE_PRODUCT_BY_ID } from "../services/productService";
 import { toast } from "react-toastify";
 import { Oval, RotatingLines, ThreeDots } from "react-loader-spinner";
 import { handleLongText } from "../utils/helper";
+import "../styles/previewCardStyle.css"
 
-const PreviewCard = ({ product, onDelete }) => {
+const PreviewCard = ({ product, onDelete ,onUpdate }) => {
+
+  const handleUpdateProduct = () =>{
+     onUpdate(product);
+  }
   const [isLaoding, setIsLaoding] = useState(false);
-
 
   const handleDeleteProduct = () => {
     setIsLaoding(true);
@@ -24,17 +28,18 @@ const PreviewCard = ({ product, onDelete }) => {
   };
   return (
     <div>
-      <div >
+      <div className="pre-border rounded mt-5 p-4" >
 
 
         <img
+          style={{width:"300px"}}
           className="img-fluid"
           src={
             product?.images?.length > 0
               ? product.images[0]
               : <>
-              <div className="d-grid p-5 mt-5 border rounded ">   
-               <img style={{width: "200px"}} src="https://cdn3d.iconscout.com/3d/premium/thumb/forward-8851143-7155861.png" alt="Image" />
+              <div className="d-grid p-5 mt-5 pre-border rounded ">   
+               <img style={{width: "220px"}} src="https://cdn3d.iconscout.com/3d/premium/thumb/web-alert-6592068-5487955.png" alt="Image" />
                 <p className="text-center pt-3">Choose product to perform modification!!!</p>
               </div>
               </>
@@ -47,12 +52,18 @@ const PreviewCard = ({ product, onDelete }) => {
           alt=""
         />
         <h2 className="pt-3">
-            { product.title }      </h2>
+            { 
+            handleLongText( product.title,10)
+            }      </h2>
         <hr />
-        <p>{ product.description}</p>
+        <p>{
+        handleLongText(product.description,50) 
+      }</p>
 
         <div>
-          <button className="btn btn-danger me-3">update</button>
+          <button className="btn btn-danger me-3"
+            onClick={handleUpdateProduct}
+          >update</button>
           <button className="btn  btn-warning" onClick={handleDeleteProduct}>
            {
             isLaoding ? <>   <RotatingLines
