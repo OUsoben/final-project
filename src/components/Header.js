@@ -20,27 +20,9 @@ const Header = () => {
           <p className="text-secondary ms-2 ps-5 p-font">Your great choice </p>
         </div>
       
-        <div class="w-50 pt-2   container height d-flex justify-content-center mt-5">
-          <div class="col-lg-10 col-md-6 col-sm-4">
-            <div class="form">
-              <input
-                type="text"
-                class="form-control form-input"
-                placeholder="Search your product key ..."
-              />
-              <span class="left-pan">
-                <FontAwesomeIcon icon={faMagnifyingGlass} />
-              </span>
-            </div>
-          </div>
-          <div className="d-flex w-25 p-2 ms-3 ">
-            <img
-              style={{ height: "34px" }}
-              src={require("../images/Language.png")}
-              alt=""
-            />
-          </div>
-        </div>
+        <nav>
+          
+        </nav>
       </header>
 
     </div>

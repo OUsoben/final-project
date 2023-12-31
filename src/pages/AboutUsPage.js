@@ -2,29 +2,23 @@ import React from "react";
 import "../styles/aboutUsStyle.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faLine, faLinkedinIn, faTiktok, faTwitter } from "@fortawesome/free-brands-svg-icons";
-
+import { useTranslation } from "react-i18next";
 const AboutUsPage = () => {
+  const {t} = useTranslation()
   return (
     <div className="bg-light">
       <div className="text-center p-5">
-        <h2 className="fw-bold"> About Us</h2>
+        <h2 className="fw-bold">{t("AboutUsPage.h1")}</h2>
         <p className="text-muted">
-          Welcome to our sports store, where passion meets performance!
+        {t("AboutUsPage.p1")}
         </p>
       </div>
 
       <section className="ms-5 d-flex col-md-4 col-lg-11 col-sm-4 text-center">
         <div className=" text-center ">
-          <h2 className="fw-bold p-4 ">About Our Sports Store</h2>
+          <h2 className="fw-bold p-4 "> {t("AboutUsPage.h2")}</h2>
           <p className="pe-5 pt-3">
-            Welcome to The sport store, your one-stop destination for all your
-            sports and fitness needs! At The sport store , we are passionate
-            about helping you achieve your athletic goals by providing
-            top-quality sports gear and accessories. Let me take you on a brief
-            journey through what makes us stand out. At our store, we are
-            dedicated to providing high-quality sports gear and equipment to
-            athletes of all levels. Whether you're a professional athlete or a
-            weekend warrior, we have the gear you need to succeed.
+          {t("AboutUsPage.p2")}
           </p>
         </div>
         <img
@@ -40,26 +34,17 @@ const AboutUsPage = () => {
           alt=""
         />
         <div className="p-5 text-center">
-          <h2 className="fw-bold p-5">Our Mission</h2>
+          <h2 className="fw-bold p-5"> {t("AboutUsPage.h3")}</h2>
           <p>
-            At The Sport Store, our mission is to empower individuals on their
-            journey to a healthier, more active lifestyle. We strive to be more
-            than just a sports store; we aim to be a catalyst for personal
-            growth, community engagement, and athletic excellence. Our mission
-            is to inspire and empower people to lead active and healthy
-            lifestyles through the joy of sports. We believe in the
-            transformative power of sports and aim to make quality sports
-            equipment accessible to everyone.
+          {t("AboutUsPage.p3")}
           </p>
         </div>
       </section>
       <section className="p-5 d-flex ">
         <div className="p-5 text-center">
-          <h2 className="fw-bold p-5">Our Team</h2>
+          <h2 className="fw-bold p-5">{t("AboutUsPage.h4")}</h2>
           <p>
-            Explore our wide range of products, including athletic apparel,
-            footwear, accessories, and more. Our knowledgeable staff is here to
-            help you find the perfect gear to elevate your game.
+          {t("AboutUsPage.p4")}
           </p>
         </div>
         <img
@@ -75,20 +60,13 @@ const AboutUsPage = () => {
           alt=""
         />
         <div className="p-5">
-          <h2 className="fw-bold ">Mr.Elon Musk</h2>
-          <p className="fs-5">CEO, Founder</p>
+          <h2 className="fw-bold ">{t("AboutUsPage.h5")}</h2>
+          <p className="fs-5">{t("AboutUsPage.h6")}</p>
           <hr />
           <p>
-            Hello, The sport Store community! This is Elon Musk , and I am
-            incredibly excited to connect with you today as the CEO of our
-            beloved sports store. At the Sport store, our mission goes beyond
-            simply providing sports gear — we are dedicated to empowering each
-            of you on your unique journey to a healthier, more active
-            lifestyle.As we look ahead, our focus remains on innovation,
-            customer satisfaction, and community engagement. I can't wait to
-            share more details with you soon.
+          {t("AboutUsPage.p5")}
           </p>
-          <h5 className="fw-bold">FOLLOW ME</h5>
+          <h5 className="fw-bold">{t("AboutUsPage.h7")}</h5>
           <hr />
           <div className=" d-flex">
           <FontAwesomeIcon className="text-primary" icon={faTwitter} size="2x" />
@@ -101,16 +79,13 @@ const AboutUsPage = () => {
       </section>
       <section className="p-5 d-flex  col-lg-10 ms-5">
         <div className="p-5 container">
-          <h2 className="fw-bold ">Mr.Ben</h2>
-          <p className="fs-5">Developer</p>
+          <h2 className="fw-bold ">{t("AboutUsPage.h8")}</h2>
+          <p className="fs-5">{t("AboutUsPage.h9")}</p>
           <hr />
           <p>
-            Hello, everyone! I'm Ben, and I'm thrilled to connect with you today
-            as a developer. Whether you're a fellow coder, a client, or just
-            someone interested in the tech world, I'm excited to share a bit
-            about what I do and the passion that drives me.
+          {t("AboutUsPage.p6")}
           </p>
-          <h5 className="fw-bold">FOLLOW ME</h5>
+          <h5 className="fw-bold">{t("AboutUsPage.h7")}</h5>
           <hr />
           <div className=" d-flex">
           <FontAwesomeIcon className="text-primary" icon={faTwitter} size="2x" />
