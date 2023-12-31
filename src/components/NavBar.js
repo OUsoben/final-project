@@ -38,7 +38,7 @@ function NavBar() {
             <NavLink className={'nav-link text-white ms-3'} to={"/services"} >{t("Navbar.title2")}</NavLink>
             <NavLink className={'nav-link text-white ms-3'} to={"products"} >{t("Navbar.title3")}</NavLink>
             <NavLink className={'nav-link text-white ms-3'} to={"/aboutus"} >{t("Navbar.title4")}</NavLink>
-            <NavLink className={'nav-link text-white ms-3'} to={"/admin/products"}  >{t("Navbar.title4")}</NavLink>
+            <NavLink className={'nav-link text-white ms-3'} to={"/admin/products"}  >{t("Navbar.title5")}</NavLink>
           </Nav>
 
          
@@ -65,9 +65,7 @@ function NavBar() {
                 )
                 })
                 
-        }
-             
-              
+        }              
             </NavDropdown>
           
             </div>
