@@ -1,9 +1,11 @@
 import React from 'react'
 import '../styles/notFoundPageStyle.css';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const NotFoundPage = () => {
+    let navigate = useNavigate()
   return (
     <div>
  <body class="bg-purple">
@@ -12,7 +14,10 @@ const NotFoundPage = () => {
             
             <div class="central-body">
                 <img class="image-404" src="http://salehriaz.com/404Page/img/404.svg" width="300px"/>
-                <a href="/" class="btn-go-home" >GO BACK HOME</a>
+                <button  class="btn-go-home btn"
+                onClick={()=>{
+                    navigate("/")
+                }}>GO BACK HOME</button>
             </div>
             <div class="objects">
                 <img class="object_rocket" src="http://salehriaz.com/404Page/img/rocket.svg" width="40px"/>
